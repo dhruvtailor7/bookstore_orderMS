@@ -109,7 +109,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void sendEmail(OrderDTO ordercreated) throws Exception
+    public void sendEmail(OrderDTO ordercreated)
     {
 
 
