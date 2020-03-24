@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 
 import javax.mail.*;
+import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
@@ -109,7 +110,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void sendEmail(OrderDTO ordercreated)
+    public void sendEmail(OrderDTO ordercreated) throws AddressException,MessagingException
     {
 
 
