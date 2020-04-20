@@ -12,7 +12,7 @@ import java.util.List;
 
 //import org.springframework.cloud.netflix.feign.FeignClient;
 
-@FeignClient(name = "product")
+@FeignClient("http://bookstore-product.herokuapp.com/")
 public interface ProductClient {
 
 
