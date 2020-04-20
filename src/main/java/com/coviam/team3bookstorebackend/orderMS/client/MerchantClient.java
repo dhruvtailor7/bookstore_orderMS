@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "merchant")
+@FeignClient("http://bookstore-merchant.herokuapp.com/")
 public interface MerchantClient {
 //    @PostMapping("/addMerchant")
 //    String addMerchant(@RequestBody MerchantDTO merchantDTO);
