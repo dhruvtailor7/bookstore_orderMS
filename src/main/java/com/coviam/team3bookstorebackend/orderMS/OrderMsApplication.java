@@ -9,7 +9,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableFeignClients
-@EnableEurekaClient
 public class OrderMsApplication {
 
 	public static void main(String[] args)  throws  Exception{
