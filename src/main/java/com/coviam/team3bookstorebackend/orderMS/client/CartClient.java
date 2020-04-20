@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient("http://bookstore-cart.herokuapp.com/")
+@FeignClient("https://bookstore-cart.herokuapp.com/")
 public interface CartClient {
     @PostMapping("/add")
     ResponseEntity<String> add(@RequestBody CartDTO cartDTO);
